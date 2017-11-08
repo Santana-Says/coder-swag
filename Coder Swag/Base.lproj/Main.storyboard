@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="Avenir.ttc">
-            <string>Avenir-Book</string>
             <string>Avenir-Heavy</string>
+            <string>Avenir-Medium</string>
         </array>
     </customFonts>
     <scenes>
@@ -25,16 +26,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHOP BY CATEGORY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFe-dm-K94">
-                                <rect key="frame" x="16" y="20" width="165" height="23.666666666666671"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="16" y="20" width="180" height="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OOS-4i-Gq9">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OOS-4i-Gq9">
                                 <rect key="frame" x="0.0" y="51" width="414" height="621"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="165" id="44h-yG-qZu" customClass="CategoryCell" customModule="Coder_Swag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="165" id="44h-yG-qZu" customClass="CategoryCell" customModule="Coder_Swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="165"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="44h-yG-qZu" id="oBo-LP-SiI">
@@ -42,18 +43,21 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="yLD-Ts-mFn">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="164.66666666666666"/>
+                                                    <rect key="frame" x="0.0" y="3" width="414" height="159"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="yLD-Ts-mFn" secondAttribute="height" multiplier="138:53" id="2od-Lb-eow"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Evt-xJ-Mjr">
-                                                    <rect key="frame" x="160.66666666666666" y="68.666666666666671" width="93" height="27.333333333333329"/>
+                                                    <rect key="frame" x="160.66666666666666" y="69" width="93" height="27.333333333333329"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="yLD-Ts-mFn" firstAttribute="top" secondItem="oBo-LP-SiI" secondAttribute="top" id="BVJ-vb-3Im"/>
-                                                <constraint firstAttribute="bottom" secondItem="yLD-Ts-mFn" secondAttribute="bottom" id="UtH-VT-cv8"/>
+                                                <constraint firstItem="yLD-Ts-mFn" firstAttribute="top" secondItem="oBo-LP-SiI" secondAttribute="top" constant="3" id="BVJ-vb-3Im"/>
+                                                <constraint firstAttribute="bottom" secondItem="yLD-Ts-mFn" secondAttribute="bottom" constant="3" id="UtH-VT-cv8"/>
                                                 <constraint firstItem="Evt-xJ-Mjr" firstAttribute="centerX" secondItem="oBo-LP-SiI" secondAttribute="centerX" id="dEZ-DD-Uk7"/>
                                                 <constraint firstItem="yLD-Ts-mFn" firstAttribute="leading" secondItem="oBo-LP-SiI" secondAttribute="leading" id="mql-5z-yBw"/>
                                                 <constraint firstAttribute="trailing" secondItem="yLD-Ts-mFn" secondAttribute="trailing" id="ttQ-TN-wRh"/>
@@ -71,6 +75,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OOS-4i-Gq9" firstAttribute="top" secondItem="GFe-dm-K94" secondAttribute="bottom" constant="7.5" id="6fh-s8-ije"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GFe-dm-K94" secondAttribute="trailing" constant="218" id="B8m-If-jwS"/>
                             <constraint firstItem="GFe-dm-K94" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GSx-V4-IJC"/>
                             <constraint firstItem="GFe-dm-K94" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="hlQ-eF-Oyl"/>
                             <constraint firstItem="OOS-4i-Gq9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="k3w-7Q-TXY"/>
@@ -86,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="477.60000000000002" y="133.5832083958021"/>
+            <point key="canvasLocation" x="476.81159420289856" y="132.88043478260872"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="N8O-eU-kbp">
