@@ -15,6 +15,8 @@
 		B5091A5D1FB1E25B00A4606C /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5091A5C1FB1E25B00A4606C /* CategoryCell.swift */; };
 		B5091A5F1FB2A25900A4606C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5091A5E1FB2A25900A4606C /* Category.swift */; };
 		B5091A621FB2A38900A4606C /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5091A611FB2A38900A4606C /* DataService.swift */; };
+		B5091A641FB2B76C00A4606C /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5091A631FB2B76C00A4606C /* ProductCell.swift */; };
+		B5091A661FB2B81900A4606C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5091A651FB2B81900A4606C /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		B5091A5C1FB1E25B00A4606C /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		B5091A5E1FB2A25900A4606C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		B5091A611FB2A38900A4606C /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		B5091A631FB2B76C00A4606C /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		B5091A651FB2B81900A4606C /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				B5091A5C1FB1E25B00A4606C /* CategoryCell.swift */,
+				B5091A631FB2B76C00A4606C /* ProductCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -93,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				B5091A5E1FB2A25900A4606C /* Category.swift */,
+				B5091A651FB2B81900A4606C /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -180,8 +186,10 @@
 				B5091A4A1FB1D7BA00A4606C /* CategoriesVC.swift in Sources */,
 				B5091A481FB1D7BA00A4606C /* AppDelegate.swift in Sources */,
 				B5091A5D1FB1E25B00A4606C /* CategoryCell.swift in Sources */,
+				B5091A641FB2B76C00A4606C /* ProductCell.swift in Sources */,
 				B5091A5F1FB2A25900A4606C /* Category.swift in Sources */,
 				B5091A621FB2A38900A4606C /* DataService.swift in Sources */,
+				B5091A661FB2B81900A4606C /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
